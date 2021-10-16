@@ -28,8 +28,9 @@
 			<?php
 				$sel = $db->select("siswa a, kelas b,spp c where a.id_kelas=b.id_kelas and a.id_spp = c.id_spp","a.*,b.nama_kelas,c.nominal");
 				$no=0;
+				
+				// dd($sel);
 				while($row=$sel->fetch()){
-					$row
 					$no++;
 					?>
 					<tr>
