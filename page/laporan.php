@@ -20,7 +20,7 @@
 			<tbody>
 				<?php 
 				$sel=$db->select("siswa a, siswa b, pembayaran c, spp d,mpetugas e where a.id_kelas=b.id_kelas and a.nisn=c.nisn and c.id_spp=a.id_spp and a.id_spp=d.id_spp and c.id_petugas=e.id_petugas");
-				$no=0
+				$no=0;
 				while ($row=$sel->fetch()) {
 					$no++;
 					?>
